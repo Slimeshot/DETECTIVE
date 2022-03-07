@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 5</title>
+	<title>Детективное агенство</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -23,46 +23,81 @@
 
 
 
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header__content">
-				<div class="header__block">
-					<button class="header__burger"></button>
-				</div>
-				<nav class="navigation header__navigation">
-					<ul class="navigation__menu"> 
-						<li class="navigation__list"><a href="#" class="navigation__link">Услуги</a></li>
-						<li class="navigation__list"><a href="#" class="navigation__link">Цены</a></li>
-						<li class="navigation__list"><a href="#" class="navigation__link">Блог</a></li>
-						<li class="navigation__list"><a href="#" class="navigation__link">Контакты</a></li>
+				<a href="#" class="header__mail"></a>
+				<a href="index.html" class="header__logo desc">Aлена Cоколова</a>
+				<a href="index.html" class="header__logo tab-mob">A.C.</a>
+				<div class="header__menu">
+					<nav class="navigation header__navigation" id="headerMenu">
+						<ul class="navigation__menu"> 
+							<li class="navigation__list"><a href="index.html" class="navigation__link">Услуги</a></li>
+							<li class="navigation__list"><a href="price.html" class="navigation__link">Цены</a></li>
+							<li class="navigation__list"><a href="blog.html" class="navigation__link">Блог</a></li>
+							<li class="navigation__list"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+						</ul>
+						<div class="header__block">
+							<button class="header__phone btn" data-openCall>Заказать звонок</button>
+							<div class="header__group">
+								<a href="#" class="header__link"><img src="images/dist/icon/telegram.svg" alt=""><span>Telegram</span></a>
+								<a href="#" class="header__link"><img src="images/dist/icon/facebook.svg" alt=""><span>Facebook</span></a>
+							</div>
+						</div>
+					</nav>
+					<div class="header__btn-wrapper">
+						<button class="btn header__btn" data-openCall>Связаться со мной</button>
+					</div>
+					<ul class="header__social">
+						<li class="header__social-list"><a href="#" class="header__social-link"><img src="images/dist/icon/telegram.svg" alt=""><span>Telegram</span></a></li>
+						<li class="header__social-list"><a href="#" class="header__social-link"><img src="images/dist/icon/facebook.svg" alt=""><span>Facebook</span></a></li>
 					</ul>
-				</nav>
-				<div class="header__logo">A.C.</div>
-				<button class="btn header__btn">Связаться со мной</button>
+					<button class="header__burger tab-mob" id="burger"></button>
+				</div>	
 			</div>
 		</div>
 	</header>
+<div class="call" id="call"  data-closeCall>
+    <div class="call__block">
+        <h6 class="call__title">Заказ звонка</h6>
+        <div class="call__subtitle">Оставьте свои данные и мы перезвоним</div>
+        <form method="POST" class="call__form" id="CallBack">
+            <input class="call__name" name="name" type="text" placeholder="Имя" required> 
+            <input class="call__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$" name="email" type="email" placeholder="E-mail" required> 
+            <input type="submit" id="sendCallBack" value="Заказать звонок" class="btn call__btn">
+        </form>
+        <button class="call__cross" data-closeCall></button>
+        <div class="call__pol">Отправляя свои данные вы соглашаетесь на&nbsp;<span class="call__pol-blue">обработку данных</span></div>
+    </div>
+
+</div>
 
 
 <section class="intro">
     <div class="container">
         <div class="intro__content">
-            <h1 class="intro__title">Соколова<br>
-                Алёна Анатольевна</h1>
-            <picture class="intro__bg">
-                <source media="(min-width:1024px)" srcset="images/dist/intro/intro-desc.png">
-                <source media="(min-width:540px)" srcset="images/dist/intro/intro-tab.png">
-                <img src="images/dist/intro/intro-mob.png" alt="girl">
-            </picture>
-            <div class="intro__bottom">
-                <div class="intro__subtitle">Услуги частного<br>
-                    детектива в Санкт-Петербурге</div>
-                <button class="btn intro__btn">Получить консультацию</button>
+            <div class="intro__intro">
+                <h1 class="intro__title"><span>Услуги частного</span>
+                    <span class="into__tag">
+                        <span>детектива</span>
+                        <div class="intro__item">
+                            <img src="images/dist/intro/girl.png" alt="girl">
+                            <div class="intro__group">
+                                <span class="intro__name">Алёна Соколова</span>
+                                <span class="intro__city">Санкт-Петербург</span>
+                            </div>
+                        </div>
+                    </span>
+                </h1>
+                
             </div>
-            <span class="intro__block">
-                <a href="#" class="intro__social"><img src="images/dist/icon/telegram.svg" alt=""><span>Telegram</span></a>
-                <a href="#" class="intro__social"><img src="images/dist/icon/facebook.svg" alt=""><span>Facebook</span></a>
-            </span>
+            <div class="intro__bg"></div>
+            <div class="intro__info">
+                <div class="intro__text">Специализируюсь на оперативном поиске<br>
+                    информации и сбору доказательственной<br>
+                    базы для юридических лиц. </div>
+                <a href="#" class="intro__btn btn" data-openCall>Получить консультацию <img src="images/dist/icon/arrow-right-white.svg" alt="arrow"></a>
+            </div>
         </div>
     </div>
 </section>
@@ -120,54 +155,87 @@
                 что подходит именно вам</h3>
             <ul class="choise__menu">
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Сбор сведений</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    <a href="collectinfo.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Сбор сведений</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Борьба с контрафактной продукцией</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, enim illum! Tempore eveniet fugiat mollitia saepe perspiciatis atque magnam soluta voluptates qui dolore. Temporibus, doloremque? Vitae repellendus esse quibusdam autem.</div>
+                    <a href="counterfeit.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Борьба с контрафактной продукцией</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Проверка сотрудников</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info"></div>
+                    <a href="checkcoworker.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Проверка сотрудников</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Проверка на полиграфе</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info"></div>
+                    <a href="polygraphtest.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Проверка на полиграфе</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Проверка партнеров и контрагентов</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info"></div>
+                    <a href="checkpartner.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Проверка партнеров и контрагентов</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Установление факта разглашения коммерческой тайны</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info"></div>
+                    <a href="tradesecret.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Установление факта разглашения коммерческой тайны</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
                 <li class="choise__list">
-                    <div class="choise__group">
-                        <div class="choise__text">Поиск людей</div>
-                        <a href="#" class="choise__link"></a>
-                    </div>
-                    <div class="choise__info"></div>
+                    <a href="searchforcitizens.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Поиск людей</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
                 </li>
+                <li class="choise__list">
+                    <a href="propertysearch.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Поиск имущества</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
+                </li>
+                <li class="choise__list">
+                    <a href="babysearch.html">
+                        <div class="choise__group">
+                            <div class="choise__text">Поиск ребенка</div>
+                            <button class="choise__link btn"></button>
+                        </div>
+                        <div class="choise__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                    </a>
+                </li>
+
             </ul>
 
             <div class="choise__shape">
@@ -179,7 +247,7 @@
                     <input class="choise__name" name="name" type="text" placeholder="Имя" required> 
                     <input class="choise__phone" name="phone" type="text" placeholder="Телефон" required>
                     <div class="choise__block">
-                        <input type="submit" id="sendCallBack" value="Заказать звонок" class="choise__btn" disabled>
+                        <input type="submit" id="sendCallBack" value="Заказать звонок" class="choise__btn">
                         <div class="choise__social">
                             <a href="#" class="choise__social-link">
                                 <img src="images/dist/icon/telegram-blue.svg" alt="social">
@@ -255,8 +323,6 @@
     </div>
     <img class="garant__ellipse" src="images/dist/icon/ellipse.svg" alt="">
 </section>
-
-
 
 
 <section class="reviews">
@@ -343,15 +409,23 @@
 
             </div>
 
-            <div class="reviews__run">
-                <span>HL</span>
-                <span>Партнеры</span>
-                <span>ПОЛИГРАФОЛОГ</span>
-            </div>
+            
 
         </div>
     </div>
 </section>
+
+
+<section class="run">
+    <div class="container">
+        <div class="run__content">
+            <span>HL</span>
+            <span>Партнеры</span>
+            <span>ПОЛИГРАФОЛОГ</span>
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -369,7 +443,7 @@
                         <input class="choise__name" name="name" type="text" placeholder="Имя" required> 
                         <input class="choise__phone" name="phone" type="text" placeholder="Телефон" required>
                         <div class="choise__block">
-                            <input type="submit" id="sendCallBack" value="Заказать звонок" class="choise__btn" disabled>
+                            <input type="submit" id="sendCallBack" value="Заказать звонок" class="choise__btn">
                             <div class="choise__social">
                                 <a href="#" class="choise__social-link">
                                     <img src="images/dist/icon/telegram-blue.svg" alt="social">
@@ -404,16 +478,16 @@
 			<div class="footer__content">
 				<div class="footer__top">
 					<div class="footer__logotips">
-						<div class="footer__logo">A.C.</div>
+						<a href="index.html" class="footer__logo">A.C.</a>
 						<img src="images/dist/icon/star-black.svg" alt="star">
 					</div>
 					<div class="footer__group">
 						<div class="navigation footer__navigation">
 							<ul class="navigation__menu"> 
-								<li class="navigation__list"><a href="#" class="navigation__link">Услуги</a></li>
-								<li class="navigation__list"><a href="#" class="navigation__link">Цены</a></li>
-								<li class="navigation__list"><a href="#" class="navigation__link">Блог</a></li>
-								<li class="navigation__list"><a href="#" class="navigation__link">Контакты</a></li>
+								<li class="navigation__list"><a href="index.html" class="navigation__link">Услуги</a></li>
+								<li class="navigation__list"><a href="price.html" class="navigation__link">Цены</a></li>
+								<li class="navigation__list"><a href="blog.html" class="navigation__link">Блог</a></li>
+								<li class="navigation__list"><a href="contacts.html" class="navigation__link">Контакты</a></li>
 							</ul>
 						</div>
 						<div class="navigation footer__navigation">
