@@ -27,7 +27,7 @@
 		<div class="container">
 			<div class="header__content">
 				<a href="#" class="header__mail"></a>
-				<a href="index.html" class="header__logo desc">Aлена Cоколова</a>
+				<a href="index.html" class="header__logo desc">Aлёна Cоколова</a>
 				<a href="index.html" class="header__logo tab-mob">A.C.</a>
 				<div class="header__menu">
 					<nav class="navigation header__navigation" id="headerMenu">
@@ -40,17 +40,19 @@
 						<div class="header__block">
 							<button class="header__phone btn" data-openCall>Заказать звонок</button>
 							<div class="header__group">
-								<a href="#" class="header__link"><img src="images/dist/icon/telegram.svg" alt=""><span>Telegram</span></a>
-								<a href="#" class="header__link"><img src="images/dist/icon/facebook.svg" alt=""><span>Facebook</span></a>
+								<a href="#" class="header__link"><img src="images/dist/icon/telegram.svg" alt="telegram"><span>Telegram</span></a>
+								<a href="#" class="header__link"><img src="images/dist/icon/instagram.svg" alt="instagram"><span>Instagram</span></a>
 							</div>
 						</div>
 					</nav>
 					<div class="header__btn-wrapper">
 						<button class="btn header__btn" data-openCall>Связаться со мной</button>
+						<!-- <a href="tel:78129564233" class="btn header__btn header__tel">+7 (812) 956-42-33</a> -->
 					</div>
 					<ul class="header__social">
-						<li class="header__social-list"><a href="#" class="header__social-link"><img src="images/dist/icon/telegram.svg" alt=""><span>Telegram</span></a></li>
-						<li class="header__social-list"><a href="#" class="header__social-link"><img src="images/dist/icon/facebook.svg" alt=""><span>Facebook</span></a></li>
+						<li class="header__social-list"><a href="tel:78129564233" class="header__social-link">+7 (812) 956-42-33</a></li>
+						<li class="header__social-list"><a href="#" class="header__social-link"><img src="images/dist/icon/telegram.svg" alt="telegram"></a></li>
+						<li class="header__social-list"><a href="#" class="header__social-link"><img src="images/dist/icon/instagram.svg" alt="instagram"></a></li>
 					</ul>
 					<button class="header__burger tab-mob" id="burger"></button>
 				</div>	
@@ -124,7 +126,7 @@
 
 
 
-<section class="action">
+<!-- <section class="action">
     <div class="action__fon"></div>
     <div class="container">
         <div class="action__content">
@@ -159,7 +161,49 @@
             </div>
         </div>
     </div>
+</section> -->
+
+
+
+
+<section class="act">
+    <div class="container">
+        <div class="act__content">
+            <h3 class="act__title act__title-counterfeit">Сбор <br>информации<br> поможет вам</h3>
+            <div class="act__block act__block-collectinfo">
+                <ul class="act__menu">
+                    <li class="act__list"><span>Подтвердить или опровергнуть устную информацию</span></li>
+                    <li class="act__list"><span>Выявить причины странного поведения</span></li>
+                    <li class="act__list"><span>Обезопасить семью и родственников</span></li>
+                    <li class="act__list"><span>Выявить неблагоприятные факты в прошлой деятельности</span></li>
+                    <li class="act__list"><span>Получить достаточное количество достоверных данных для принятия решения</span></li>
+                </ul>
+
+                <div class="act__box">
+                    <div class="act__group  act__group-searchforcitizens">
+                        <div class="act__text">Чтобы найти человека не обязательно иметь о нём
+                            информацию, достаточен минимальный объем данных</div>
+                            <div class="act__clon">
+                                <div class="act__example">Например</div>
+                                <div class="act__char"></div>
+                                
+                            </div>      
+                    </div>
+                        <ul class="act__txt">
+                            <li class="act__list-txt"><span> Номер рейса в котором летел человек</span></li>
+                            <li class="act__list-txt"><span> Фотография</span></li>
+                            <li class="act__list-txt"><span> Место встречи и т.д.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
+
+
 
 <section class="process">
     <div class="container">
@@ -208,13 +252,13 @@
                         стоимости</div>
                     <div class="payment__item-text payment__item-first">Применяется при оплате конкретных услуг, стоимость которых не может измениться в процессе исполнения.</div>
                     <div class="payment__item-text payment__item-second">Объем и сложность таких услуг заранее известна или поддается прогнозированию.</div>
-                    <button class="payment__item-btn btn">Как происходит работа</button>
+                    <button class="payment__item-btn btn" data-openCall>Начать сотрудничество</button>
                 </div>
                 <div class="payment__item">
-                    <div class="payment__item-title">Пополнение депозита</div>
+                    <div class="payment__item-title">Депозитная система</div>
                     <div class="payment__item-text payment__item-first">Применяется при сложных расследованиях, когда объем работы невозможно определить заранее.</div>
                     <div class="payment__item-text payment__item-second">Данная модель помогает, контролировать расходы и оперативно реагировать на изменения.</div>
-                    <button class="payment__item-btn btn">Как происходит работа</button>
+                    <button class="payment__item-btn btn" data-openCall>Начать сотрудничество</button>
                 </div>
             </div>
         </div>
@@ -243,13 +287,24 @@
                     </li>
                 </ul>
     
-                <button class="garant__btn btn">Получить лицензию</button>
+                <button class="garant__btn btn" data-openLicense>Получить лицензию</button>
 
             </div>
         </div>
     </div>
+    
     <img class="garant__ellipse" src="images/dist/icon/ellipse.svg" alt="">
 </section>
+
+
+<div class="popup" id="popup"  data-closeLicense>
+    <div class="popup__block">
+        <button class="popup__cross" data-closeLicense></button>
+
+        <img class="popup__img" src="../images/dist/garant/garant-1.jfif" alt="">
+    </div>
+
+</div>
 
 
 <section class="reviews">
@@ -357,7 +412,7 @@
                                 <div class="interesting__text">Сбор сведений</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Предоставлю информацию о человеке или компании в соответствии с поставленной задачей.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -366,7 +421,7 @@
                                 <div class="interesting__text">Борьба с контрафактной продукцией</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Найду место производства и точки реализации контрафактной продукции, установлю поставщиков и организаторов для защиты законных прав и интересов.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -375,7 +430,7 @@
                                 <div class="interesting__text">Проверка сотрудников</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Обязательная процедура как при приеме на работу, так и при назначении кандидата на руководящую должность. Проверка позволит избежать финансовых и репутационных рисков.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -384,7 +439,7 @@
                                 <div class="interesting__text">Проверка на полиграфе</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Проанализирую ситуацию, составлю список вопросов, проведу тестирование, предоставлю результаты.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -393,7 +448,7 @@
                                 <div class="interesting__text">Проверка партнеров и контрагентов</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Проверю благонадёжность, предоставлю данные о возможных рисках при сотрудничестве с контрагентом (долги, судимости и другие неблагоприятные факторы)</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -402,7 +457,7 @@
                                 <div class="interesting__text">Установление факта разглашения коммерческой тайны</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info"> Сбор доказательств разглашения сведений, являющихся коммерческой тайной бывшими или действующими сотрудниками или иными лицами.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -411,7 +466,7 @@
                                 <div class="interesting__text">Поиск людей</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Розыск пропавших без вести, сбежавших детей, родственников, должников, мошенников.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -420,7 +475,7 @@
                                 <div class="interesting__text">Поиск имущества</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info">Найду движимое/недвижимое имущество, денежные активы.</div>
                         </a>
                     </li>
                     <li class="interesting__list">
@@ -429,7 +484,7 @@
                                 <div class="interesting__text">Поиск ребенка</div>
                                 <button class="interesting__link btn"></button>
                             </div>
-                            <div class="interesting__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni beatae earum quasi totam ullam quas dolores voluptatem quod consequatur.</div>
+                            <div class="interesting__info"> Установлю местожительство ребенка, с кем и в каких условиях проживает. Помогу вернуть.</div>
                         </a>
                     </li>
     
@@ -468,7 +523,8 @@
 						<div class="navigation footer__navigation">
 							<ul class="navigation__menu"> 
 								<li class="navigation__list"><a href="#" class="navigation__link"> <img src="images/dist/icon/telegram-black.svg" alt="Telegram"> Telegram</a></li>
-								<li class="navigation__list"><a href="#" class="navigation__link"> <img src="images/dist/icon/facebook-black.svg" alt="Facebook"> Facebook</a></li>
+								<li class="navigation__list"><a href="#" class="navigation__link"> <img src="images/dist/icon/whatsapp-black.svg" alt="Facebook"> Whatsapp</a></li>
+								<li class="navigation__list"><a href="#" class="navigation__link"> <img src="../images//dist/icon/instagram-black.svg" alt="Instagram"> Instagram</a></li>
 								<li class="navigation__list"><a href="#" class="navigation__link">help@acdetective.ru</a></li>
 								<li class="navigation__list"><a href="#" class="navigation__link">8 (999) 999-99-99</a></li>
 							</ul>
